@@ -1,0 +1,71 @@
+@page
+@model CRUD.Pages.Employee.Create
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-md-8 mx-auto rounded border p-4">
+        <h2 class="text-center mb-5">New Employee Data</h2>
+
+
+        @if (Model.ErrorMessage.Length > 0){
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>@Model.ErrorMessage</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        <form method="post">
+            <div class="row mb-3">
+                 <label class="col-sm-4 col-form-label">FIRST NAME*</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="FirstName" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+           
+            <div class="row mb-3">
+                 <label class="col-sm-4 col-form-label">LAST NAME*</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="LastName" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+
+             <div class="row mb-3">
+                 <label class="col-sm-4 col-form-label">EMAIL*</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+
+             <div class="row mb-3">
+                 <label class="col-sm-4 col-form-label">ADDRESS*</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Address" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+
+             <div class="row mb-3">
+                 <label class="col-sm-4 col-form-label">PHONE NUMBER*</label>
+                <div class="col-sm-8">
+                    <input class="form-control" asp-for="Phone_Number" />
+                    <span asp-validation-for="Phone_Number" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="offset-sm-4 col-sm-4 d-grid">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="col-sm-4 d-grid">
+                    <a class="btn btn-outline-primary" href="/Employee/Index" role="button">Cancel</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

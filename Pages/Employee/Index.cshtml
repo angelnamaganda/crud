@@ -1,0 +1,66 @@
+@page
+@model CRUD.Pages.Employee.Index
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="text-center mb-3">List of Employees</h2>
+
+<!-- Container for "Add Employee" and search bar -->
+<div class="d-flex justify-content-between mb-3">
+    <a class="btn btn-primary" href="/Employee/Create">Add Employee</a>
+
+    <!-- Search Form -->
+    <form method="get" class="d-flex" style="max-width: 400px;">
+        <input type="text" name="searchTerm" class="form-control me-2" placeholder="Search by Name or Email" value="@Model.SearchTerm" />
+        <button type="submit" class="btn btn-secondary">Search</button>
+        <button type="button" class="btn btn-danger ms-2" onclick="clearSearch()">Clear</button>
+    </form>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>ADDRESS</th>
+            <th>PHONE NUMBER</th>
+            <th>DATE RECORDED</th>
+            <th>ACTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.EmployeeList.Count == 0)
+        {
+            <tr>
+                <td colspan="7" class="text-center">No Data Found</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var employee in Model.EmployeeList)
+            {
+                <tr>
+                    <td>@employee.Id</td>
+                    <td>@(employee.FirstName + " " + employee.LastName)</td>
+                    <td>@employee.Email</td>
+                    <td>@employee.Address</td>
+                    <td>@employee.Phone_Number</td>
+                    <td>@employee.Date_Recorded</td>
+                    <td style="white-space:nowrap">
+                        <a class="btn btn-primary btn-sm" href="/Employee/Edit?id=@employee.Id">Edit</a>
+                        <a class="btn btn-danger btn-sm" href="/Employee/Delete?id=@employee.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<script>
+    function clearSearch() {
+        // Redirect to the same page with no search term
+        window.location.href = "/Employee/Index";
+    }
+</script>
