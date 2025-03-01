@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angel\\Documents\\C# Project\\CRUD\\CRUD.csproj": {}
+    "C:\\Users\\angel\\Documents\\C# Project\\CRUD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angel\\Documents\\C# Project\\CRUD\\CRUD.csproj": {
+    "C:\\Users\\angel\\Documents\\C# Project\\CRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Documents\\C# Project\\CRUD\\CRUD.csproj",
+        "projectUniqueName": "C:\\Users\\angel\\Documents\\C# Project\\CRUD.csproj",
         "projectName": "CRUD",
-        "projectPath": "C:\\Users\\angel\\Documents\\C# Project\\CRUD\\CRUD.csproj",
+        "projectPath": "C:\\Users\\angel\\Documents\\C# Project\\CRUD.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Documents\\C# Project\\CRUD\\obj\\",
+        "outputPath": "C:\\Users\\angel\\Documents\\C# Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
