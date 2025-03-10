@@ -2,12 +2,6 @@
 
 This is the README file for the CRUD Application.
 
-## Table of Contents
-- [Introduction] (#Introduction)
-- [Features] (#Features)
-- [Technologies Used] (#Technologies-Used)
-- [Contributions] (#Contributions)
-
 ## Introduction
 
  This repository contains CRUD (Creat, Read, Updaten and Delete) application build using C#, ASP.net, and MS SQL. It demontrates fundamental database operations and follow best practices for efficinet database management
