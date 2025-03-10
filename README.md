@@ -37,17 +37,6 @@ This is the README file for the CRUD Application.
 - Javascript
 - HTML and CSS
 
-## Contributions
-
-Contributions are welcome! If you would like to contribute to the CRUD application, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature: `git checkout -b feature-name`
-3. Make the necessary changes and commit them: `git commit -am 'Add feature'`
-4. Push your changes to the branch: `git push origin feature-name`
-5. Submit a pull request.
-Please ensure your code follows the project's coding conventions and includes
-appropriate tests.
 
 
 
